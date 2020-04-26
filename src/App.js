@@ -2,22 +2,17 @@ import React, { useEffect } from 'react';
 import logo from './images/logo.svg';
 import Home from './components/Home';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import './App.css';
-import './style.sass';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  useLocation,
-} from "react-router-dom";
-import Menu from './components/Menu';
+// import './App.css';
+import './style.sass';
+import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom';
+import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App(props) {
   return (
     <Router>
-      <Menu />
+      <Header />
       <div id="content">
         <Switch>
           <TransitionGroup>
