@@ -1,12 +1,22 @@
 import React from 'react';
 import RSlider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
+import FeaturedImage from '../reusable-components/FeaturedImages';
 import img1 from '../images/bg1.jpg';
+
+const bg = ` linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0,.6 )), url(${img1})`;
 
 function Home() {
   return (
     <div id="home">
-      <Slider />
+      <FeaturedImage
+        title="Unleash the potential of your child"
+        subTitle="Prepare them to real life challenges"
+        link={{
+          name: 'Learn more',
+        }}
+        bg={bg}
+      />
       <div className="widget-row">
         <div className="container">
           <div>hello world</div>
@@ -20,8 +30,13 @@ function Home() {
 // https://www.npmjs.com/package/react-animated-slider
 
 const slides = [
-  { img: img1, text: 'some-text-here' },
-  { img: img1, text: 'some-text-here' },
+  // { img: img1, text: 'some-text-here' },
+  // { img: img1, text: 'some-text-here' },
+  // { img: img1, text: 'some-text-here' },
+  // { img: img1, text: 'some-text-here' },
+  // { img: img1, text: 'some-text-here' },
+  // { img: img1, text: 'some-text-here' },
+  // { img: img1, text: 'some-text-here' },
 ];
 
 function Slider() {

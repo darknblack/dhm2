@@ -1,13 +1,18 @@
+$color-secondary: #f0f0f0
+
 body
   background-color: #f7f7f7
+  font-family: Lato
+
+h1,h2,h3,h4,h5
+  font-family: "Fira Sans"
 
 #menu-list
   display: flex
-  // justify-content: space-around
-  a
+  > a
     text-decoration: none
     cursor: pointer
-    padding: 10px 10px
+    padding: 18px 10px
     text-align: center
     color: #333
     text-transform: uppercase
@@ -15,7 +20,6 @@ body
 .menu-bar
   display: flex
   justify-content: space-between
-  height: 80px
 .menu-left
   display: flex
   align-items: center
@@ -30,6 +34,13 @@ body
   width: 150px
   line-height: 70px
 
+.featured 
+  height: 500px
+  .title,.sub-title
+    text-transform: uppercase
+  .sub-title
+    letter-spacing: 4px
+
 
 #slider
   height: 500px
@@ -43,6 +54,7 @@ body
   display: flex
   justify-content: center
   align-items: center
+
 h1.slider-item-title
   color: #fff
 
@@ -51,7 +63,7 @@ h1.slider-item-title
 .widget-row
   padding: 20px
 
-#top-footer
+#footer
   background-color: #2A2D34
   color: #fff
   height: 300px
@@ -67,9 +79,8 @@ h1.slider-item-title
 .fade
   opacity: 1
 
-
 #top-menu-wrapper
-  background: #444
+  background: #000
   color: #f0f0f0
   font-size: 13px
 
@@ -77,5 +88,100 @@ h1.slider-item-title
   display: flex
   justify-content: space-between
   align-items: center
-  .top-menu-right
+  color: $color-secondary
+  letter-spacing: 1px
+  .right
     padding: 5px 15px
+
+
+.featured
+  text-align: center
+  color: $color-secondary
+  letter-spacing: 1px
+  overflow: hidden
+  height: 700px !important
+  .bg
+    height: 100%
+    background-position: center center !important
+    background-repeat: no-repeat !important
+    background-size: cover !important
+    display: flex
+    align-items: center
+  .title
+    font-size: 40px
+    font-weight: 700
+
+.button 
+  background: rgba
+
+.dropdown
+  position: relative
+
+.dropdown-list
+  &.show
+    display: block
+  padding: 10px
+  display: none
+  position: absolute
+  left: 0
+  top: 100%
+  font-size: 13px
+  text-align: left
+  width: 200px
+  background: #fff
+  border: 1px solid #eee
+  box-shadow: 2px 2px 10px 1px rgba(25,25,25,.2)
+  border-bottom: 2px solid rgba(25,25,25,.8)
+  a
+    text-decoration: none
+    display: block
+    text-align: left
+    padding: 10px 5px
+    color: #333
+
+.button-feature
+  border: 1px solid #ccc
+  padding: 10px 15px
+  border-radius: 2px
+  cursor: pointer
+  display: inline-block
+  user-select: none
+
+/*OUR SCHOOL*/
+
+#about-bg-diagonal 
+  width: 60%
+  height: 700px
+  float: right
+  background: url('./images/bg1.jpg')
+  border-left: 200px solid white
+  border-top: 700px solid transparent
+  
+#about-content-box
+  float: left
+  height: 700px
+
+#about-content-box-outer 
+  width: 100%
+  height: 100%
+  display: table
+
+#about-content-box-inner 
+  display: table-cell
+  vertical-align: middle
+
+#our-school 
+  .content-title
+    h3 
+      text-align: left
+
+#about-desc 
+  p 
+    margin-bottom: 30px
+
+  // BG-PARALLAX EFFECT
+  .bg-parallax
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    background-attachment: fixed
