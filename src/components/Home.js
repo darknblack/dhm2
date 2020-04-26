@@ -7,7 +7,6 @@ import img1 from '../images/bg1.jpg';
 function Home() {
   return (
     <div id="home">
-
       <Slider></Slider>
       <div className="widget-row">
         Some Text here
